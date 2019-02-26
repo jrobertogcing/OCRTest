@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8143AD9DC63A8564298A4235 /* Pods_OCRTest1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3775FD597BF2D619B17ED1B4 /* Pods_OCRTest1.framework */; };
 		885362442224767200351023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885362432224767200351023 /* AppDelegate.swift */; };
 		885362462224767200351023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885362452224767200351023 /* ViewController.swift */; };
 		885362492224767200351023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885362472224767200351023 /* Main.storyboard */; };
 		8853624B2224767300351023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8853624A2224767300351023 /* Assets.xcassets */; };
 		8853624E2224767300351023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8853624C2224767300351023 /* LaunchScreen.storyboard */; };
 		88536256222476BE00351023 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88536255222476BE00351023 /* Preview.swift */; };
+		8882250F2224D1EB000D5812 /* TesseractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8882250E2224D1EB000D5812 /* TesseractViewController.swift */; };
+		888225112224D468000D5812 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 888225102224D468000D5812 /* tessdata */; };
+		888B49A62225ACBF00D9E48C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 888B49A22225A39E00D9E48C /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3775FD597BF2D619B17ED1B4 /* Pods_OCRTest1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCRTest1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		885362402224767200351023 /* OCRTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCRTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885362432224767200351023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		885362452224767200351023 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,12 @@
 		8853624D2224767300351023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8853624F2224767300351023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88536255222476BE00351023 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		8882250E2224D1EB000D5812 /* TesseractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesseractViewController.swift; sourceTree = "<group>"; };
+		888225102224D468000D5812 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		888B49A22225A39E00D9E48C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		888B49A42225A80300D9E48C /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		C730D332B8762DD221D95DE1 /* Pods-OCRTest1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRTest1.release.xcconfig"; path = "Target Support Files/Pods-OCRTest1/Pods-OCRTest1.release.xcconfig"; sourceTree = "<group>"; };
+		E1DE8D921C82FD848C1AF254 /* Pods-OCRTest1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCRTest1.debug.xcconfig"; path = "Target Support Files/Pods-OCRTest1/Pods-OCRTest1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +42,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888B49A62225ACBF00D9E48C /* libz.tbd in Frameworks */,
+				8143AD9DC63A8564298A4235 /* Pods_OCRTest1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1530FBA376EB5374801304B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1DE8D921C82FD848C1AF254 /* Pods-OCRTest1.debug.xcconfig */,
+				C730D332B8762DD221D95DE1 /* Pods-OCRTest1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		232A600EF1E36E2EB40C184B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				888B49A42225A80300D9E48C /* libz.1.tbd */,
+				888B49A22225A39E00D9E48C /* libz.tbd */,
+				3775FD597BF2D619B17ED1B4 /* Pods_OCRTest1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		885362372224767200351023 = {
 			isa = PBXGroup;
 			children = (
 				885362422224767200351023 /* OCRTest1 */,
 				885362412224767200351023 /* Products */,
+				1530FBA376EB5374801304B9 /* Pods */,
+				232A600EF1E36E2EB40C184B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +94,10 @@
 				885362452224767200351023 /* ViewController.swift */,
 				88536255222476BE00351023 /* Preview.swift */,
 				885362472224767200351023 /* Main.storyboard */,
+				8882250E2224D1EB000D5812 /* TesseractViewController.swift */,
 				8853624A2224767300351023 /* Assets.xcassets */,
 				8853624C2224767300351023 /* LaunchScreen.storyboard */,
+				888225102224D468000D5812 /* tessdata */,
 				8853624F2224767300351023 /* Info.plist */,
 			);
 			path = OCRTest1;
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 885362522224767300351023 /* Build configuration list for PBXNativeTarget "OCRTest1" */;
 			buildPhases = (
+				3B06F5424C18E7132FE95D11 /* [CP] Check Pods Manifest.lock */,
 				8853623C2224767200351023 /* Sources */,
 				8853623D2224767200351023 /* Frameworks */,
 				8853623E2224767200351023 /* Resources */,
+				06D45932A48FCC673BBD56D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8853624E2224767300351023 /* LaunchScreen.storyboard in Resources */,
+				888225112224D468000D5812 /* tessdata in Resources */,
 				8853624B2224767300351023 /* Assets.xcassets in Resources */,
 				885362492224767200351023 /* Main.storyboard in Resources */,
 			);
@@ -133,12 +172,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06D45932A48FCC673BBD56D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCRTest1/Pods-OCRTest1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCRTest1/Pods-OCRTest1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B06F5424C18E7132FE95D11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCRTest1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8853623C2224767200351023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				885362462224767200351023 /* ViewController.swift in Sources */,
+				8882250F2224D1EB000D5812 /* TesseractViewController.swift in Sources */,
 				88536256222476BE00351023 /* Preview.swift in Sources */,
 				885362442224767200351023 /* AppDelegate.swift in Sources */,
 			);
@@ -201,6 +288,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -262,6 +350,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -284,10 +373,12 @@
 		};
 		885362532224767300351023 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1DE8D921C82FD848C1AF254 /* Pods-OCRTest1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KAGQ44QH8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = OCRTest1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,10 +393,12 @@
 		};
 		885362542224767300351023 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C730D332B8762DD221D95DE1 /* Pods-OCRTest1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KAGQ44QH8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = OCRTest1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
